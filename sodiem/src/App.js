@@ -26,7 +26,7 @@ const App = () => {
   const debouncedSearch = useDebounce(search, 300);
   const searchRef = useRef(null);
 
-  // Chỉ nạp dữ liệu mẫu khi chưa có dữ liệu đã lưu
+ 
   useEffect(() => {
     if (data && !hasSaved) dispatch(setCourses(data));
   }, [data, dispatch]);
